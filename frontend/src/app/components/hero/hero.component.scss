@@ -1,0 +1,124 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+
+  &__inner {
+    max-width: 760px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__greeting {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    animation-delay: 0.1s;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.1s forwards;
+  }
+
+  &__name {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.2s forwards;
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 1.75rem;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.3s forwards;
+  }
+
+  &__typed {
+    font-family: var(--font-mono);
+    color: var(--accent);
+  }
+
+  &__cursor {
+    color: var(--accent);
+    animation: blink 1s step-start infinite;
+    margin-left: 2px;
+  }
+
+  &__bio {
+    max-width: 560px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 2.25rem;
+    line-height: 1.75;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.4s forwards;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.5s forwards;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.25rem;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.6s forwards;
+
+    a {
+      color: var(--text-muted);
+      transition: color 0.2s, transform 0.2s;
+      &:hover { color: var(--accent); transform: translateY(-2px); }
+    }
+  }
+
+  &__scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-faint);
+
+    span {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      writing-mode: vertical-rl;
+    }
+  }
+
+  &__scroll-line {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, var(--text-faint), transparent);
+    animation: scrollLine 2s ease-in-out infinite;
+  }
+}
+
+@keyframes scrollLine {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__actions { flex-direction: column; align-items: flex-start; }
+    &__scroll-hint { display: none; }
+  }
+}

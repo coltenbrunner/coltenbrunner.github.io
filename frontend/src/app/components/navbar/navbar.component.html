@@ -1,0 +1,32 @@
+<nav class="navbar" [class.navbar--scrolled]="scrolled">
+  <div class="container navbar__inner">
+
+    <a class="navbar__logo" (click)="scrollTo('hero')" role="button">
+      <span class="navbar__logo-bracket">&lt;</span>CB<span class="navbar__logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="navbar__links" [class.navbar__links--open]="menuOpen">
+      <li *ngFor="let link of navLinks; let i = index">
+        <a (click)="scrollTo(link.anchor)" role="button">
+          <span class="navbar__link-num">0{{ i + 1 }}.</span> {{ link.label }}
+        </a>
+      </li>
+      <li>
+        <a href="/assets/resume.pdf" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+          Resume
+        </a>
+      </li>
+    </ul>
+
+    <div class="navbar__actions">
+      <button class="navbar__theme-btn" (click)="theme.toggle()" [title]="theme.isDark() ? 'Switch to light mode' : 'Switch to dark mode'">
+        <span *ngIf="theme.isDark()">☀️</span>
+        <span *ngIf="!theme.isDark()">🌙</span>
+      </button>
+      <button class="navbar__hamburger" (click)="menuOpen = !menuOpen" [class.open]="menuOpen" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
