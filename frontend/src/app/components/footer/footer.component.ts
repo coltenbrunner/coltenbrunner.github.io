@@ -13,24 +13,21 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .footer {
-      padding: 2rem 0;
+      padding: 2.5rem 0;
       border-top: 1px solid var(--border);
       text-align: center;
-
-    .footer__inner {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-      }
-
-      p {
-        font-size: 0.85rem;
-        color: var(--text-muted);
-        span { color: var(--accent); }
-      }
-
-    .footer__year { color: var(--text-faint); }
     }
+    .footer__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .footer p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .footer p span { color: var(--accent); }
+    .footer__year { color: var(--text-faint); }
   `],
 })
 export class FooterComponent {

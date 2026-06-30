@@ -1,15 +1,16 @@
 // ── Design tokens ──────────────────────────────────────────────────────────────
 :root {
-  --bg:          #0d0d14;
-  --bg-surface:  #13131f;
-  --bg-card:     #1a1a2e;
-  --border:      #2a2a45;
+  // Dark theme — lifted off pure-black and softened off-white to cut glare
+  --bg:          #101017;
+  --bg-surface:  #15151f;
+  --bg-card:     #1c1c2b;
+  --border:      #2a2a40;
   --accent:      #6bbfca;
-  --accent-dim:  rgba(107, 191, 202, 0.15);
+  --accent-dim:  rgba(107, 191, 202, 0.14);
   --accent2:     #a78bfa;
-  --text:        #e0e0e0;
-  --text-muted:  #8888aa;
-  --text-faint:  #44445a;
+  --text:        #d5d6df;
+  --text-muted:  #9090ad;
+  --text-faint:  #4a4a60;
   --font-sans:   'Inter', system-ui, sans-serif;
   --font-mono:   'JetBrains Mono', 'Courier New', monospace;
   --radius:      8px;
@@ -17,13 +18,17 @@
 }
 
 [data-theme="light"] {
-  --bg:         #f5f5f8;
-  --bg-surface: #ffffff;
-  --bg-card:    #eeeef4;
-  --border:     #d0d0e0;
-  --text:       #1a1a2e;
-  --text-muted: #555577;
-  --text-faint: #aaaacc;
+  // Light theme — slightly off-white surfaces and a darker teal accent so
+  // accent text/links stay legible (the dark-theme cyan fails on white).
+  --bg:         #f3f4f7;
+  --bg-surface: #fbfbfe;
+  --bg-card:    #eaebf2;
+  --border:     #d9dae4;
+  --accent:     #2c8d9c;
+  --accent-dim: rgba(44, 141, 156, 0.12);
+  --text:       #23233a;
+  --text-muted: #5a5a78;
+  --text-faint: #a6a6c4;
 }
 
 // ── Reset / base ───────────────────────────────────────────────────────────────
@@ -58,6 +63,14 @@ img { max-width: 100%; display: block; }
 
 .section {
   padding: 100px 0;
+  scroll-margin-top: 80px; // keep anchored sections clear of the fixed navbar
+}
+
+// Section rhythm — alternating surfaces give each band a distinct footing
+// and a calmer, more deliberate flow down the page.
+#experience,
+#skills {
+  background: var(--bg-surface);
 }
 
 .section-label {
