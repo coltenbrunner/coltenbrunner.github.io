@@ -6,8 +6,9 @@ import { Experience } from '../models/experience.model';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  // TODO: sign up at formspree.io, create a form, and paste your form ID here
-  private formspreeId = 'YOUR_FORMSPREE_ID';
+  // Not configured yet. Sign up at formspree.io, create a form, paste the ID here,
+  // then set formEnabled = true in contact.component.ts to show the contact form.
+  private formspreeId = '';
 
   constructor(private http: HttpClient) {}
 

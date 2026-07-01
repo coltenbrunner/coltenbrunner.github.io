@@ -16,9 +16,12 @@ export class ProjectsComponent implements OnInit {
   showAll = false;
 
   private static fallback: Project[] = [
-    { id: 1, title: 'Project One', description: 'Short description of what this project does.', tech: ['Angular', 'Node.js', 'MongoDB'], image: '', github: 'https://github.com/coltenbrunner', demo: '', featured: true },
-    { id: 2, title: 'Project Two', description: 'Short description of what this project does.', tech: ['Python', 'Flask', 'PostgreSQL'], image: '', github: 'https://github.com/coltenbrunner', demo: '', featured: true },
-    { id: 3, title: 'Project Three', description: 'Short description of what this project does.', tech: ['React', 'Express', 'Redis'], image: '', github: 'https://github.com/coltenbrunner', demo: '', featured: false },
+    { id: 1, title: 'AES Padding-Oracle Attack', description: "A padding-oracle attack against AES-CBC that recovers plaintext one byte at a time without ever knowing the key.", tech: ['Python', 'AES-CBC', 'Cryptanalysis'], image: '', github: '', demo: '', featured: true },
+    { id: 2, title: 'Garbled Circuits', description: "An implementation of Yao's garbled circuits, enabling two parties to jointly evaluate a function while keeping their inputs private.", tech: ['Python', 'Secure Computation', 'MPC'], image: '', github: '', demo: '', featured: true },
+    { id: 3, title: 'Oblivious Polynomial MPC', description: 'Oblivious polynomial evaluation built on the MASCOT protocol for maliciously-secure multiparty computation.', tech: ['C', 'MASCOT', 'MPC'], image: '', github: '', demo: '', featured: true },
+    { id: 4, title: 'Plonky2 ZK Circuit', description: 'A zero-knowledge proof circuit implemented with Plonky2, produced for ECE 598YPZ (Advanced Topics in Applied Cryptography).', tech: ['Rust', 'Zero-Knowledge', 'Plonky2'], image: '', github: '', demo: '', featured: true },
+    { id: 5, title: 'AES Block Cipher (Hardware)', description: 'A hardware implementation of the AES block cipher written in SystemVerilog.', tech: ['SystemVerilog', 'AES', 'Hardware'], image: '', github: '', demo: '', featured: false },
+    { id: 6, title: 'Polynomial Extrapolation in Finite Fields', description: 'Polynomial interpolation and extrapolation over finite fields — a core building block for secret sharing and MPC.', tech: ['Python', 'Finite Fields', 'Algebra'], image: '', github: '', demo: '', featured: false },
   ];
 
   ngOnInit(): void {

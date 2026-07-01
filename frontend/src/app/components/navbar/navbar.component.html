@@ -11,7 +11,7 @@
           <span class="navbar__link-num">0{{ i + 1 }}.</span> {{ link.label }}
         </a>
       </li>
-      <li>
+      <li *ngIf="showResume">
         <a href="/assets/resume.pdf" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
           Resume
         </a>

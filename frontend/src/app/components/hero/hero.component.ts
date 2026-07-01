@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeroComponent implements OnInit, OnDestroy {
   displayedTitle = '';
-  private titles = ['Software Engineer', 'Full-Stack Developer', 'Problem Solver'];
+  private titles = ['Ph.D. Student', 'Cryptography Researcher', 'Distributed Systems', 'Security Engineer'];
   private titleIndex = 0;
   private charIndex = 0;
   private deleting = false;

@@ -1,0 +1,29 @@
+<section class="section" id="education">
+  <div class="container">
+    <p class="section-label">Where I've studied</p>
+    <h2 class="section-title"><span>Education</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="education__list">
+      <div class="education__item card" *ngFor="let edu of education">
+        <div class="education__header">
+          <div>
+            <h3 class="education__school">{{ edu.school }}</h3>
+            <p class="education__degree">
+              {{ edu.degree }}
+              <span class="education__location" *ngIf="edu.location">· {{ edu.location }}</span>
+            </p>
+          </div>
+          <span class="education__dates">{{ edu.start }} – {{ edu.end }}</span>
+        </div>
+
+        <p class="education__note" *ngIf="edu.note">{{ edu.note }}</p>
+
+        <div class="education__meta">
+          <span class="education__gpa" *ngIf="edu.gpa">GPA {{ edu.gpa }}</span>
+          <span class="education__honor" *ngFor="let honor of edu.honors">{{ honor }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

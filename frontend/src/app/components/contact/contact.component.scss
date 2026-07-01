@@ -4,6 +4,12 @@
     grid-template-columns: 1fr 1.6fr;
     gap: 4rem;
     align-items: start;
+
+    // When the form is hidden, center the contact info as a single column.
+    &--solo {
+      grid-template-columns: 1fr;
+      max-width: 620px;
+    }
   }
 
   &__blurb {

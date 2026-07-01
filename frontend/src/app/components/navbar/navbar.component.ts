@@ -14,8 +14,12 @@ export class NavbarComponent {
   scrolled = false;
   menuOpen = false;
 
+  // Résumé is kept private for now. Flip to true (and add assets/resume.pdf) to show it.
+  showResume = false;
+
   navLinks = [
     { label: 'About',      anchor: 'about' },
+    { label: 'Education',  anchor: 'education' },
     { label: 'Experience', anchor: 'experience' },
     { label: 'Projects',   anchor: 'projects' },
     { label: 'Skills',     anchor: 'skills' },

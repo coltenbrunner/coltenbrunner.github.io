@@ -1,3 +1,16 @@
+.timeline__group {
+  & + & { margin-top: 3rem; }
+
+  &-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+  }
+}
+
 .timeline {
   display: flex;
   flex-direction: column;

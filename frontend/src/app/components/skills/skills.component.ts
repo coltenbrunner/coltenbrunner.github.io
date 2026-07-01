@@ -14,23 +14,22 @@ interface SkillGroup {
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-  // TODO: replace with your actual skills
   skillGroups: SkillGroup[] = [
     {
       category: 'Languages',
-      skills: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL', 'HTML/CSS'],
+      skills: ['Python', 'C', 'C++', 'Rust', 'Swift', 'SystemVerilog', 'JavaScript', 'HTML/CSS'],
     },
     {
-      category: 'Frameworks & Libraries',
-      skills: ['Angular', 'React', 'Node.js', 'Express', 'Flask', 'Spring Boot'],
+      category: 'Cryptography & Security',
+      skills: ['Secure MPC', 'Zero-Knowledge Proofs', 'Oblivious Transfer', 'PKI / Let’s Encrypt', 'MP-SPDZ', 'Snort', 'MITRE Caldera'],
     },
     {
-      category: 'Tools & Platforms',
-      skills: ['Git', 'Docker', 'AWS', 'PostgreSQL', 'MongoDB', 'Linux'],
+      category: 'Machine Learning & Data',
+      skills: ['PyTorch', 'TensorFlow', 'OpenCV', 'Pandas', 'NumPy', 'SciPy', 'Matplotlib'],
     },
     {
-      category: 'Concepts',
-      skills: ['REST APIs', 'CI/CD', 'Agile', 'TDD', 'Microservices', 'System Design'],
+      category: 'Infrastructure & Tools',
+      skills: ['Git', 'Linux / Unix', 'PowerShell', 'AWS', 'GCP', 'HashiCorp Vault', 'Ansible', 'Terraform'],
     },
   ];
 }

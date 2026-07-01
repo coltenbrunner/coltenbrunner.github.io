@@ -67,9 +67,10 @@ img { max-width: 100%; display: block; }
 }
 
 // Section rhythm — alternating surfaces give each band a distinct footing
-// and a calmer, more deliberate flow down the page.
-#experience,
-#skills {
+// and a calmer, more deliberate flow down the page. (Only sections whose
+// inner cards/chips don't rely on --bg-surface are banded, so nothing blends.)
+#education,
+#projects {
   background: var(--bg-surface);
 }
 

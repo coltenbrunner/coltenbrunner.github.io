@@ -4,12 +4,12 @@
     <h2 class="section-title">Contact <span>Me</span></h2>
     <div class="section-divider"></div>
 
-    <div class="contact__layout">
+    <div class="contact__layout" [class.contact__layout--solo]="!formEnabled">
 
       <div class="contact__info">
         <p class="contact__blurb">
-          Whether you have a question, a project idea, or just want to say hello,
-          my inbox is always open. I'll do my best to get back to you.
+          Whether it's a research collaboration, a question about my work, or just a
+          hello, my inbox is always open — I'll do my best to get back to you.
         </p>
         <div class="contact__links">
           <a href="mailto:colten.brunner@gmail.com">
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <form class="contact__form card" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <form class="contact__form card" *ngIf="formEnabled" [formGroup]="form" (ngSubmit)="submit()" novalidate>
 
         <div class="contact__row">
           <div class="contact__field" [class.contact__field--error]="isInvalid('name')">
