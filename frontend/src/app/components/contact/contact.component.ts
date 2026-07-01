@@ -14,8 +14,7 @@ export class ContactComponent {
   private fb = inject(FormBuilder);
   private api = inject(ApiService);
 
-  // Contact form is hidden until a Formspree form is configured.
-  // To re-enable: set a real formspreeId in api.service.ts, then flip this to true.
+  // Set to true to show the contact form (requires a Formspree ID in api.service.ts).
   formEnabled = false;
 
   status: 'idle' | 'sending' | 'success' | 'error' = 'idle';

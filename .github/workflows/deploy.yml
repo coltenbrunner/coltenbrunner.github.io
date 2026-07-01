@@ -1,12 +1,10 @@
 name: Build & Deploy to GitHub Pages
 
 on:
-  # Manual deploys only — push to master freely without publishing.
-  # To go live: GitHub → Actions tab → "Build & Deploy to GitHub Pages" → Run workflow.
+  # Deploys automatically on every push to master, and can also be run manually.
+  push:
+    branches: [master]
   workflow_dispatch:
-  # To restore automatic deploy on every push, uncomment the two lines below:
-  # push:
-  #   branches: [master]
 
 permissions:
   contents: read

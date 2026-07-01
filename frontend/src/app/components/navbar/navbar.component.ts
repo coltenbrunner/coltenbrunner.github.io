@@ -14,7 +14,7 @@ export class NavbarComponent {
   scrolled = false;
   menuOpen = false;
 
-  // Résumé is kept private for now. Flip to true (and add assets/resume.pdf) to show it.
+  // Set to true to show the résumé link (expects assets/resume.pdf).
   showResume = false;
 
   navLinks = [
