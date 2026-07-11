@@ -21,8 +21,6 @@ import { Component } from '@angular/core';
         color: var(--text-faint);
       }
     }
-    .footer p span { color: var(--accent); }
-    .footer__year { color: var(--text-faint); }
   `],
 })
 export class FooterComponent {

@@ -7,7 +7,7 @@
       <li *ngFor="let link of navLinks">
         <a (click)="scrollTo(link.anchor)" role="button">{{ link.label }}</a>
       </li>
-      <li>
+      <li *ngIf="showResume">
         <a href="/assets/resume.pdf" target="_blank" rel="noopener">CV</a>
       </li>
     </ul>

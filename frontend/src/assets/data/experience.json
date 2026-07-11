@@ -8,7 +8,7 @@
     "start": "Aug 2024",
     "end": "present",
     "bullets": [
-      "Anti-collusion mechanisms for secure multiparty computation, asynchronous verifiable information dispersal, and message-loss-resilient protocols in asynchronous networks."
+      "Anti-collusion mechanisms for secure multiparty computation, asynchronous verifiable information dispersal, and message-loss-resilient protocols in asynchronous networks. Presented at the CERIAS Security Symposium (2026)."
     ]
   },
   {
@@ -26,17 +26,29 @@
   {
     "id": 3,
     "type": "teaching",
-    "role": "Graduate Teaching Assistant, CS 182 Discrete Mathematics",
+    "role": "Graduate Teaching Assistant, CS 48900 Embedded Systems",
     "company": "Purdue University",
     "location": "West Lafayette, IN",
-    "start": "Aug 2024",
+    "start": "Jan 2026",
     "end": "present",
     "bullets": [
-      "Lead weekly discussion and lab sections; contribute to assignments and examinations."
+      "Manage the course website and materials; deliver occasional guest lectures."
     ]
   },
   {
     "id": 4,
+    "type": "teaching",
+    "role": "Graduate Teaching Assistant, CS 182 Discrete Mathematics",
+    "company": "Purdue University",
+    "location": "West Lafayette, IN",
+    "start": "Aug 2024",
+    "end": "Dec 2025",
+    "bullets": [
+      "Led weekly discussion and lab sections; contributed to assignments and examinations."
+    ]
+  },
+  {
+    "id": 5,
     "type": "work",
     "role": "Encryption Engineering Intern",
     "company": "Synchrony Financial",
@@ -46,7 +58,7 @@
     "bullets": []
   },
   {
-    "id": 5,
+    "id": 6,
     "type": "work",
     "role": "Cloud Security Intern",
     "company": "Synchrony Financial",
@@ -56,7 +68,7 @@
     "bullets": []
   },
   {
-    "id": 6,
+    "id": 7,
     "type": "work",
     "role": "Software Engineer",
     "company": "Disruption Laboratory",
@@ -66,7 +78,7 @@
     "bullets": []
   },
   {
-    "id": 7,
+    "id": 8,
     "type": "work",
     "role": "Data Analyst",
     "company": "AbbVie Innovation Center",

@@ -7,5 +7,4 @@ export interface Experience {
   start: string;
   end: string;
   bullets: string[];
-  category?: string; // 'Research' | 'Teaching' | 'Industry' — used to group the timeline
 }
