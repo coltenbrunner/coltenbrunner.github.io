@@ -1,68 +1,25 @@
-.projects {
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-
-  &__card {
+.research {
+  &__list {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-
-    &-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    &-icon {
-      color: var(--accent);
-    }
-
-    &-links {
-      display: flex;
-      gap: 0.75rem;
-
-      a {
-        color: var(--text-muted);
-        transition: color 0.2s, transform 0.2s;
-        &:hover { color: var(--accent); transform: translateY(-2px); }
-      }
-    }
-
-    &-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    &-desc {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.65;
-      flex: 1;
-    }
-
-    &-tech {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: auto;
-
-      span {
-        font-family: var(--font-mono);
-        font-size: 0.75rem;
-        color: var(--accent);
-        background: var(--accent-dim);
-        padding: 2px 10px;
-        border-radius: 20px;
-      }
-    }
+    gap: 1.25rem;
   }
 
-  &__more {
-    text-align: center;
-    margin-top: 2.5rem;
+  &__item-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+  }
+
+  &__item-link {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-left: 0.4rem;
+  }
+
+  &__item-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
   }
 }

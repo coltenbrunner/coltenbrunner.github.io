@@ -12,18 +12,16 @@ import { Experience } from '../../models/experience.model';
 })
 export class ExperienceComponent implements OnInit {
   private api = inject(ApiService);
-  experience: Experience[] = [];
+  all: Experience[] = [];
 
-  // Order the timeline groups the way the CV is organized.
-  private readonly categoryOrder = ['Research', 'Teaching', 'Industry'];
-
-  // Fallback static data — used if the JSON request fails.
-  private static fallback: Experience[] = ExperienceComponent.data();
+  get research(): Experience[] { return this.all.filter(e => e.type === 'research'); }
+  get teaching(): Experience[] { return this.all.filter(e => e.type === 'teaching'); }
+  get work():     Experience[] { return this.all.filter(e => e.type === 'work'); }
 
   ngOnInit(): void {
     this.api.getExperience().subscribe({
-      next: data => (this.experience = data),
-      error: () => (this.experience = ExperienceComponent.fallback),
+      next: data => (this.all = data),
+      error: () => (this.all = []),
     });
   }
 

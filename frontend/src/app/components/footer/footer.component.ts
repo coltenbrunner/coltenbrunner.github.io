@@ -5,26 +5,21 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <footer class="footer">
-      <div class="container footer__inner">
-        <p>Designed &amp; Built by <span>Colten Brunner</span></p>
-        <p class="footer__year">© {{ year }}</p>
+      <div class="container">
+        <p>© {{ year }} Colten Brunner</p>
       </div>
     </footer>
   `,
   styles: [`
     .footer {
-      padding: 2.5rem 0;
+      margin-top: 3.5rem;
+      padding: 1.5rem 0;
       border-top: 1px solid var(--border);
-      text-align: center;
-    }
-    .footer__inner {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-    .footer p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
+
+      p {
+        font-size: 0.85rem;
+        color: var(--text-faint);
+      }
     }
     .footer p span { color: var(--accent); }
     .footer__year { color: var(--text-faint); }

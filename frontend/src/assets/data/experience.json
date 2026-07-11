@@ -1,149 +1,78 @@
 [
   {
     "id": 1,
+    "type": "research",
     "role": "Graduate Research Assistant",
-    "company": "Freedom Research Lab, Purdue University",
+    "company": "Freedom Research Laboratory, Purdue University",
     "location": "West Lafayette, IN",
     "start": "Aug 2024",
-    "end": "Present",
-    "category": "Research",
+    "end": "present",
     "bullets": [
-      "Designing anti-collusion mechanisms for general secure multiparty computation (MPC).",
-      "Improving asynchronous verifiable information dispersal (AVID) storage protocols.",
-      "Building randomized, message-loss-resistant protocols in the asynchronous network model.",
-      "Presented current research at the CERIAS Security Symposium (2026)."
+      "Anti-collusion mechanisms for secure multiparty computation, asynchronous verifiable information dispersal, and message-loss-resilient protocols in asynchronous networks."
     ]
   },
   {
     "id": 2,
+    "type": "research",
     "role": "Undergraduate Research Assistant",
-    "company": "Decentralized Systems Lab, University of Illinois",
+    "company": "Decentralized Systems Laboratory, UIUC",
     "location": "Champaign, IL",
     "start": "Aug 2022",
-    "end": "Fall 2023",
-    "category": "Research",
+    "end": "Dec 2023",
     "bullets": [
-      "Developed a cryptographic protocol using Oblivious Transfer (OT) for anonymous healthcare rebates.",
-      "Implemented Oblivious Polynomial Evaluation in the MP-SPDZ framework, integrated via HoneyBadgerMPC.",
-      "Presented decentralized-systems work at the Jump Arches Symposium (2022)."
+      "Cryptographic protocols for anonymous healthcare rebates based on oblivious transfer, implemented in the MP-SPDZ framework."
     ]
   },
   {
     "id": 3,
-    "role": "Undergraduate Research Assistant",
-    "company": "Data & Technology Innovation Group, University of Illinois",
-    "location": "Champaign, IL",
-    "start": "Sep 2021",
-    "end": "Dec 2021",
-    "category": "Research",
+    "type": "teaching",
+    "role": "Graduate Teaching Assistant, CS 182 Discrete Mathematics",
+    "company": "Purdue University",
+    "location": "West Lafayette, IN",
+    "start": "Aug 2024",
+    "end": "present",
     "bullets": [
-      "Created and analyzed surveys for outreach impact studies.",
-      "Worked with schools to improve digital accessibility and broadband access across Illinois."
+      "Lead weekly discussion and lab sections; contribute to assignments and examinations."
     ]
   },
   {
     "id": 4,
-    "role": "Graduate Teaching Assistant — CS 48900 Embedded Systems",
-    "company": "Purdue University",
-    "location": "West Lafayette, IN",
-    "start": "Jan 2026",
-    "end": "Present",
-    "category": "Teaching",
-    "bullets": [
-      "Serve as the primary liaison between students and the professor, fielding the majority of student questions.",
-      "Manage the course website, including assignments, announcements, and course materials.",
-      "Delivered guest lectures on course topics within my areas of expertise."
-    ]
+    "type": "work",
+    "role": "Encryption Engineering Intern",
+    "company": "Synchrony Financial",
+    "location": "Champaign, IL",
+    "start": "May 2023",
+    "end": "Aug 2024",
+    "bullets": []
   },
   {
     "id": 5,
-    "role": "Graduate Teaching Assistant — CS 182 Discrete Mathematics",
-    "company": "Purdue University",
-    "location": "West Lafayette, IN",
-    "start": "Aug 2024",
-    "end": "Dec 2025",
-    "category": "Teaching",
-    "bullets": [
-      "Built course assignments and examinations.",
-      "Taught weekly discussion and laboratory sections.",
-      "Held weekly office hours."
-    ]
+    "type": "work",
+    "role": "Cloud Security Intern",
+    "company": "Synchrony Financial",
+    "location": "Champaign, IL",
+    "start": "May 2022",
+    "end": "Aug 2022",
+    "bullets": []
   },
   {
     "id": 6,
-    "role": "Encryption Engineer Intern — PKI",
-    "company": "Synchrony Financial",
-    "location": "",
-    "start": "May 2023",
-    "end": "Aug 2024",
-    "category": "Industry",
-    "bullets": [
-      "Built out PKI infrastructure with Let’s Encrypt and automated certificate management.",
-      "Authored process documentation for certificate-lifecycle automation."
-    ]
+    "type": "work",
+    "role": "Software Engineer",
+    "company": "Disruption Laboratory",
+    "location": "Champaign, IL",
+    "start": "Sep 2021",
+    "end": "Dec 2022",
+    "bullets": []
   },
   {
     "id": 7,
-    "role": "Cloud Engineer Intern — Cloud Security (GCP)",
-    "company": "Synchrony Financial",
-    "location": "",
-    "start": "May 2022",
-    "end": "Aug 2022",
-    "category": "Industry",
-    "bullets": [
-      "Secured Google Cloud service-account keys using HashiCorp Vault.",
-      "Evaluated GCP products for internal security compliance."
-    ]
-  },
-  {
-    "id": 8,
-    "role": "Software Engineer",
-    "company": "Disruption Laboratory",
-    "location": "",
-    "start": "Sep 2021",
-    "end": "Dec 2022",
-    "category": "Industry",
-    "bullets": [
-      "Conducted data analyses for healthcare project feasibility studies.",
-      "Designed a trend-based cryptocurrency trading platform that achieved a 10% ROI (2021–2022)."
-    ]
-  },
-  {
-    "id": 9,
-    "role": "Data Analyst I",
+    "type": "work",
+    "role": "Data Analyst",
     "company": "AbbVie Innovation Center",
-    "location": "",
+    "location": "Remote",
     "start": "Jul 2020",
     "end": "Jun 2021",
-    "category": "Industry",
-    "bullets": [
-      "Built web platforms with R, HTML, and CSS.",
-      "Developed backends in JavaScript and Express.js."
-    ]
-  },
-  {
-    "id": 10,
-    "role": "Software Engineering Intern — IoT",
-    "company": "Acoustico, LLC",
-    "location": "",
-    "start": "Jun 2019",
-    "end": "Aug 2019",
-    "category": "Industry",
-    "bullets": [
-      "Implemented Bluetooth communication between iOS apps and Pycom hardware for sensor control."
-    ]
-  },
-  {
-    "id": 11,
-    "role": "Student Intern",
-    "company": "Disruption Laboratory",
-    "location": "",
-    "start": "Jun 2019",
-    "end": "Aug 2019",
-    "category": "Industry",
-    "bullets": [
-      "Built face recognition on a Raspberry Pi using AWS and OpenCV.",
-      "Designed an autonomous GPS drone with an Arduino Uno for route following."
-    ]
+    "bullets": []
   }
 ]

@@ -1,28 +1,38 @@
 <section class="section" id="experience">
   <div class="container">
-    <p class="section-label">What I've worked on</p>
-    <h2 class="section-title"><span>Experience</span></h2>
-    <div class="section-divider"></div>
+    <h2 class="section-title">Experience</h2>
 
-    <div class="timeline__group" *ngFor="let group of groups">
-      <h3 class="timeline__group-title">{{ group.category }}</h3>
-      <div class="timeline">
-        <div class="timeline__item card" *ngFor="let job of group.items">
-          <div class="timeline__header">
-            <div>
-              <h3 class="timeline__role">{{ job.role }}</h3>
-              <p class="timeline__company">
-                {{ job.company }}
-                <span class="timeline__location" *ngIf="job.location">· {{ job.location }}</span>
-              </p>
-            </div>
-            <span class="timeline__dates">{{ job.start }} – {{ job.end }}</span>
-          </div>
-          <ul class="timeline__bullets">
-            <li *ngFor="let bullet of job.bullets">{{ bullet }}</li>
-          </ul>
+    <div class="exp-group" *ngIf="research.length">
+      <h3 class="exp-group__label">Research</h3>
+      <div class="exp__item" *ngFor="let job of research">
+        <div class="exp__header">
+          <span class="exp__role">{{ job.role }}, {{ job.company }}</span>
+          <span class="exp__dates">{{ job.start }} – {{ job.end }}</span>
+        </div>
+        <p class="exp__desc" *ngIf="job.bullets.length">{{ job.bullets.join(' ') }}</p>
+      </div>
+    </div>
+
+    <div class="exp-group" *ngIf="teaching.length">
+      <h3 class="exp-group__label">Teaching</h3>
+      <div class="exp__item" *ngFor="let job of teaching">
+        <div class="exp__header">
+          <span class="exp__role">{{ job.role }}, {{ job.company }}</span>
+          <span class="exp__dates">{{ job.start }} – {{ job.end }}</span>
+        </div>
+        <p class="exp__desc" *ngIf="job.bullets.length">{{ job.bullets.join(' ') }}</p>
+      </div>
+    </div>
+
+    <div class="exp-group" *ngIf="work.length">
+      <h3 class="exp-group__label">Industry</h3>
+      <div class="exp__item" *ngFor="let job of work">
+        <div class="exp__header">
+          <span class="exp__role">{{ job.role }}, {{ job.company }}</span>
+          <span class="exp__dates">{{ job.start }} – {{ job.end }}</span>
         </div>
       </div>
     </div>
+
   </div>
 </section>

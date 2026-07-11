@@ -1,5 +1,6 @@
 export interface Experience {
   id: number;
+  type: 'research' | 'teaching' | 'work';
   role: string;
   company: string;
   location: string;
