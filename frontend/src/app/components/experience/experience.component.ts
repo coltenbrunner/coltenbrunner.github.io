@@ -48,10 +48,9 @@ export class ExperienceComponent implements OnInit {
         end: 'Present',
         category: 'Research',
         bullets: [
-          'Designing anti-collusion mechanisms for general secure multiparty computation (MPC).',
-          'Improving asynchronous verifiable information dispersal (AVID) storage protocols.',
+          'Developing game-theoretic mechanisms to deter collusion in secure multiparty computation (MPC).',
+          'Improving asynchronous verifiable information dispersal (AVID) with fault-tolerance trade-offs.',
           'Building randomized, message-loss-resistant protocols in the asynchronous network model.',
-          'Presented current research at the CERIAS Security Symposium (2026).',
         ],
       },
       {
@@ -60,12 +59,11 @@ export class ExperienceComponent implements OnInit {
         company: 'Decentralized Systems Lab, University of Illinois',
         location: 'Champaign, IL',
         start: 'Aug 2022',
-        end: 'Fall 2023',
+        end: 'Dec 2023',
         category: 'Research',
         bullets: [
           'Developed a cryptographic protocol using Oblivious Transfer (OT) for anonymous healthcare rebates.',
           'Implemented Oblivious Polynomial Evaluation in the MP-SPDZ framework, integrated via HoneyBadgerMPC.',
-          'Presented decentralized-systems work at the Jump Arches Symposium (2022).',
         ],
       },
       {
@@ -83,16 +81,16 @@ export class ExperienceComponent implements OnInit {
       },
       {
         id: 4,
-        role: 'Graduate Teaching Assistant — CS 48900 Embedded Systems',
+        role: 'Graduate Teaching Assistant — CS 489 Embedded Systems',
         company: 'Purdue University',
         location: 'West Lafayette, IN',
         start: 'Jan 2026',
         end: 'Present',
         category: 'Teaching',
         bullets: [
-          'Serve as the primary liaison between students and the professor, fielding the majority of student questions.',
-          'Manage the course website, including assignments, announcements, and course materials.',
-          'Delivered guest lectures on course topics within my areas of expertise.',
+          'Build course assignments and project materials.',
+          'Work closely with each student group, giving project feedback through to their final deliverable.',
+          'Deliver guest lectures in my areas of expertise, such as fault-tolerant systems.',
         ],
       },
       {

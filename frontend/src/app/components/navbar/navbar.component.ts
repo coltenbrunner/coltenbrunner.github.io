@@ -20,6 +20,7 @@ export class NavbarComponent {
   navLinks = [
     { label: 'About',      anchor: 'about' },
     { label: 'Education',  anchor: 'education' },
+    { label: 'Talks',      anchor: 'talks' },
     { label: 'Experience', anchor: 'experience' },
     { label: 'Projects',   anchor: 'projects' },
     { label: 'Skills',     anchor: 'skills' },

@@ -10,6 +10,7 @@ interface Education {
   gpa?: string;
   note?: string;
   honors: string[];
+  coursework?: string[];
 }
 
 @Component({
@@ -30,6 +31,17 @@ export class EducationComponent {
       gpa: '3.93',
       note: 'Freedom Research Lab, advised by Prof. Aniket Kate — secure multiparty computation and asynchronous distributed protocols.',
       honors: ['Presidential Fellowship'],
+      coursework: [
+        'CS 655 Advanced Cryptography',
+        'CS 592STC Special Topics in Cryptography',
+        'CS 592STB Special Topics in Blockchain',
+        'CS 581 Economic Algorithms',
+        'CS 584 Complexity Theory',
+        'CS 588 Randomized Algorithms',
+        'CS 626 Advanced Information Assurance',
+        'CS 536 Networks',
+        'CS 592TML Trustworthy Machine Learning',
+      ],
     },
     {
       school: 'University of Illinois Urbana–Champaign',

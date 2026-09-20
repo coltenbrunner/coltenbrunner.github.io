@@ -23,6 +23,13 @@
           <span class="education__gpa" *ngIf="edu.gpa">GPA {{ edu.gpa }}</span>
           <span class="education__honor" *ngFor="let honor of edu.honors">{{ honor }}</span>
         </div>
+
+        <div class="education__coursework" *ngIf="edu.coursework?.length">
+          <p class="education__coursework-label">Selected coursework</p>
+          <div class="education__courses">
+            <span *ngFor="let course of edu.coursework">{{ course }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

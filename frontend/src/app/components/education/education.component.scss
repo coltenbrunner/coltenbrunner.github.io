@@ -71,4 +71,33 @@
     color: var(--text-muted);
     border: 1px solid var(--border);
   }
+
+  &__coursework {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+
+  &__coursework-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 0.75rem;
+  }
+
+  &__courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+  }
 }

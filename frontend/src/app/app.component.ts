@@ -3,6 +3,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { EducationComponent } from './components/education/education.component';
+import { TalksComponent } from './components/talks/talks.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
@@ -17,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeroComponent,
     AboutComponent,
     EducationComponent,
+    TalksComponent,
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
@@ -29,6 +31,7 @@ import { FooterComponent } from './components/footer/footer.component';
       <app-hero></app-hero>
       <app-about></app-about>
       <app-education></app-education>
+      <app-talks></app-talks>
       <app-experience></app-experience>
       <app-projects></app-projects>
       <app-skills></app-skills>

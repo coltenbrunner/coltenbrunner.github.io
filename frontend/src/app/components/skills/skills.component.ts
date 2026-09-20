@@ -14,22 +14,24 @@ interface SkillGroup {
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
+  // Mirrors the CV's skills section — languages and tooling actually used in
+  // research and industry work, not everything ever touched.
   skillGroups: SkillGroup[] = [
     {
       category: 'Languages',
-      skills: ['Python', 'C', 'C++', 'Rust', 'Swift', 'SystemVerilog', 'JavaScript', 'HTML/CSS'],
+      skills: ['Python', 'Rust', 'C', 'C++', 'SystemVerilog'],
     },
     {
       category: 'Cryptography & Security',
-      skills: ['Secure MPC', 'Zero-Knowledge Proofs', 'Oblivious Transfer', 'PKI / Let’s Encrypt', 'MP-SPDZ', 'Snort', 'MITRE Caldera'],
+      skills: ['Secure MPC', 'Zero-Knowledge Proofs', 'Oblivious Transfer', 'MP-SPDZ', 'HoneyBadgerMPC', 'Plonky2', 'PKI / Let’s Encrypt'],
     },
     {
       category: 'Machine Learning & Data',
-      skills: ['PyTorch', 'TensorFlow', 'OpenCV', 'Pandas', 'NumPy', 'SciPy', 'Matplotlib'],
+      skills: ['PyTorch', 'NumPy', 'SciPy', 'Pandas', 'Matplotlib'],
     },
     {
       category: 'Infrastructure & Tools',
-      skills: ['Git', 'Linux / Unix', 'PowerShell', 'AWS', 'GCP', 'HashiCorp Vault', 'Ansible', 'Terraform'],
+      skills: ['Git', 'Linux / Unix', 'GCP', 'AWS', 'HashiCorp Vault'],
     },
   ];
 }

@@ -1,0 +1,30 @@
+<section class="section" id="talks">
+  <div class="container">
+    <p class="section-label">Where I've presented</p>
+    <h2 class="section-title">Talks &amp; <span>Conferences</span></h2>
+    <div class="section-divider"></div>
+
+    <h3 class="talks__group-title">Conference Posters</h3>
+    <div class="talks__list">
+      <div class="talks__item card" *ngFor="let poster of posters">
+        <div class="talks__header">
+          <div>
+            <h4 class="talks__venue">{{ poster.venue }}</h4>
+            <p class="talks__where">{{ poster.where }}</p>
+          </div>
+          <span class="talks__when">{{ poster.when }}</span>
+        </div>
+        <p class="talks__summary">{{ poster.summary }}</p>
+      </div>
+    </div>
+
+    <h3 class="talks__group-title talks__group-title--spaced">Conferences &amp; Workshops</h3>
+    <ul class="talks__attended">
+      <li *ngFor="let event of attended">
+        <span class="talks__event">{{ event.event }}</span>
+        <span class="talks__where">{{ event.where }}</span>
+        <span class="talks__when">{{ event.when }}</span>
+      </li>
+    </ul>
+  </div>
+</section>
