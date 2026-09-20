@@ -2,9 +2,6 @@ export interface Project {
   id: number;
   title: string;
   description: string;
-  tech: string[];
-  image: string;
-  github: string;
-  demo: string;
-  featured: boolean;
+  /** Optional link to a public implementation; omitted while work is unpublished. */
+  github?: string;
 }

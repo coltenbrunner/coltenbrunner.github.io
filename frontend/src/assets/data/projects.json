@@ -2,41 +2,21 @@
   {
     "id": 1,
     "title": "Anti-collusion mechanisms for secure multiparty computation",
-    "description": "Ongoing work on mechanisms that discourage collusion among participants in general secure multiparty computation, combining cryptographic and game-theoretic techniques.",
-    "tech": [],
-    "image": "",
-    "github": "",
-    "demo": "",
-    "featured": true
+    "description": "Mechanisms that make collusion unprofitable in general multiparty computation, combining cryptographic and game-theoretic techniques."
   },
   {
     "id": 2,
     "title": "Asynchronous verifiable information dispersal",
-    "description": "Improving existing asynchronous verifiable information dispersal protocols, and designing message-loss-resilient protocols in the asynchronous network model.",
-    "tech": [],
-    "image": "",
-    "github": "",
-    "demo": "",
-    "featured": true
+    "description": "Improving asynchronous verifiable information dispersal, and designing protocols that tolerate message loss in the asynchronous model."
   },
   {
     "id": 3,
     "title": "Oblivious transfer for anonymous healthcare rebates",
-    "description": "A cryptographic protocol for anonymous healthcare rebates based on oblivious transfer, with an implementation of oblivious polynomial evaluation in MP-SPDZ (Decentralized Systems Laboratory, UIUC).",
-    "tech": [],
-    "image": "",
-    "github": "",
-    "demo": "",
-    "featured": true
+    "description": "Anonymous healthcare rebates from oblivious transfer, with oblivious polynomial evaluation implemented in MP-SPDZ. Decentralized Systems Laboratory, UIUC."
   },
   {
     "id": 4,
     "title": "Zero-knowledge proof circuits in Plonky2",
-    "description": "Implementation of a Plonky2 zero-knowledge proof circuit in Rust, from a graduate course on applied cryptography.",
-    "tech": [],
-    "image": "",
-    "github": "",
-    "demo": "",
-    "featured": true
+    "description": "A zero-knowledge proof circuit built with Plonky2 in Rust."
   }
 ]

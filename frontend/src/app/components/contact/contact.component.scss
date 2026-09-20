@@ -1,5 +1,11 @@
 .contact {
   &__text {
     max-width: 620px;
+
+    // Contact is the only place with stacked body paragraphs, so the spacing
+    // lives here rather than as a global rule.
+    + .contact__text {
+      margin-top: 1rem;
+    }
   }
 }

@@ -6,15 +6,28 @@
 
       <div class="about__text">
         <p>
-          I am a Ph.D. student in Computer Science at Purdue University, where I am supported by a
-          Presidential Fellowship. My work centers on the design and analysis of cryptographic and
-          distributed protocols — in particular, understanding how rational, self-interested behavior
-          affects the security of multiparty computation and consensus protocols.
+          Most of my time goes to secure multiparty computation — protocols that let several
+          parties compute a shared result over data none of them is willing to hand over.
         </p>
         <p>
-          Before Purdue, I completed a B.S. in Computer Engineering at the University of Illinois
-          Urbana-Champaign, where I worked with the Decentralized Systems Laboratory on applied
-          multiparty computation.
+          What draws me to it is the gap between what we can prove and what actually gets
+          deployed. Moving a protocol from paper into practice tends to break it in one of two
+          ways: either a foundational assumption that does not hold outside the model, or
+          security traded away for the efficiency a system needs to be usable at all. Narrowing
+          that gap is what I am after.
+        </p>
+        <p>
+          Both failures show up in my work. Security proofs assume a fixed share of participants
+          will simply follow the rules; real ones are self-interested and collude when it pays.
+          So I design mechanisms that make honesty the rational choice rather than an assumption.
+          Real networks, meanwhile, offer none of the timing guarantees protocols are written
+          against — messages arrive late, out of order, or never. There I work on dispersing and
+          storing information reliably anyway, and on what that resilience costs elsewhere in a
+          protocol.
+        </p>
+        <p>
+          Outside of research, I wakeboard whenever there is water and a free afternoon, and I
+          follow both kinds of football — the Chicago Bears and Arsenal.
         </p>
 
         <div class="about__education">
@@ -26,26 +39,6 @@
           <div class="about__edu-item">
             <span class="about__edu-degree">B.S., Computer Engineering — University of Illinois Urbana-Champaign</span>
             <span class="about__edu-note">2020 – 2024</span>
-          </div>
-        </div>
-
-        <div class="about__talks">
-          <h3>Talks and Conferences</h3>
-          <div class="about__talk-item">
-            <span class="about__talk-title">Poster — CERIAS Security Symposium</span>
-            <span class="about__talk-note">Purdue University · Spring 2026</span>
-          </div>
-          <div class="about__talk-item">
-            <span class="about__talk-title">Poster — Jump Arches Symposium</span>
-            <span class="about__talk-note">Peoria, IL · Sep 2022</span>
-          </div>
-          <div class="about__talk-item">
-            <span class="about__talk-title">Consensus Workshop</span>
-            <span class="about__talk-note">Columbia University · Spring 2026</span>
-          </div>
-          <div class="about__talk-item">
-            <span class="about__talk-title">Science of Blockchain Conference (SBC)</span>
-            <span class="about__talk-note">University of California, Berkeley · Aug 2025</span>
           </div>
         </div>
       </div>

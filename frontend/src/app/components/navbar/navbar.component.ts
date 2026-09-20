@@ -14,13 +14,8 @@ export class NavbarComponent {
   scrolled = false;
   menuOpen = false;
 
-  // Set to true to show the résumé link (expects assets/resume.pdf).
-  showResume = false;
-
   navLinks = [
     { label: 'About',      anchor: 'about' },
-    { label: 'Research',   anchor: 'projects' },
-    { label: 'Experience', anchor: 'experience' },
     { label: 'Contact',    anchor: 'contact' },
   ];
 
