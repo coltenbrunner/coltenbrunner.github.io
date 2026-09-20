@@ -12,7 +12,8 @@
     }
   }
 
-  &__education {
+  &__education,
+  &__talks {
     margin-top: 1.5rem;
 
     h3 {
@@ -21,19 +22,22 @@
     }
   }
 
-  &__edu-item {
+  &__edu-item,
+  &__talk-item {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
     margin-bottom: 0.75rem;
   }
 
-  &__edu-degree {
+  &__edu-degree,
+  &__talk-title {
     font-weight: 500;
     color: var(--text);
   }
 
-  &__edu-note {
+  &__edu-note,
+  &__talk-note {
     font-size: 0.9rem;
     color: var(--text-muted);
   }

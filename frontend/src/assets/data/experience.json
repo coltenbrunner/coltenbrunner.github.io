@@ -8,7 +8,7 @@
     "start": "Aug 2024",
     "end": "present",
     "bullets": [
-      "Anti-collusion mechanisms for secure multiparty computation, asynchronous verifiable information dispersal, and message-loss-resilient protocols in asynchronous networks. Presented at the CERIAS Security Symposium (2026)."
+      "Game-theoretic mechanisms to deter collusion in secure multiparty computation, fault-tolerance trade-offs in asynchronous verifiable information dispersal, and randomized message-loss-resistant protocols in the asynchronous network model."
     ]
   },
   {
@@ -20,23 +20,35 @@
     "start": "Aug 2022",
     "end": "Dec 2023",
     "bullets": [
-      "Cryptographic protocols for anonymous healthcare rebates based on oblivious transfer, implemented in the MP-SPDZ framework."
+      "Cryptographic protocols for anonymous healthcare rebates based on oblivious transfer, and oblivious polynomial evaluation implemented in the MP-SPDZ framework."
     ]
   },
   {
     "id": 3,
+    "type": "research",
+    "role": "Undergraduate Research Assistant",
+    "company": "Data and Technology Innovation Group, UIUC",
+    "location": "Champaign, IL",
+    "start": "Sep 2021",
+    "end": "Dec 2021",
+    "bullets": [
+      "Outreach impact studies, and work with Illinois schools on digital accessibility and broadband access."
+    ]
+  },
+  {
+    "id": 4,
     "type": "teaching",
-    "role": "Graduate Teaching Assistant, CS 48900 Embedded Systems",
+    "role": "Graduate Teaching Assistant, CS 489 Embedded Systems",
     "company": "Purdue University",
     "location": "West Lafayette, IN",
     "start": "Jan 2026",
     "end": "present",
     "bullets": [
-      "Manage the course website and materials; deliver occasional guest lectures."
+      "Build course assignments and project materials, advise each student group through their final deliverable, and deliver guest lectures on topics such as fault-tolerant systems."
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "type": "teaching",
     "role": "Graduate Teaching Assistant, CS 182 Discrete Mathematics",
     "company": "Purdue University",
@@ -44,13 +56,13 @@
     "start": "Aug 2024",
     "end": "Dec 2025",
     "bullets": [
-      "Led weekly discussion and lab sections; contributed to assignments and examinations."
+      "Led weekly discussion and lab sections; built course assignments and examinations."
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "type": "work",
-    "role": "Encryption Engineering Intern",
+    "role": "Encryption Engineer Intern",
     "company": "Synchrony Financial",
     "location": "Champaign, IL",
     "start": "May 2023",
@@ -58,9 +70,9 @@
     "bullets": []
   },
   {
-    "id": 6,
+    "id": 7,
     "type": "work",
-    "role": "Cloud Security Intern",
+    "role": "Cloud Engineer Intern",
     "company": "Synchrony Financial",
     "location": "Champaign, IL",
     "start": "May 2022",
@@ -68,7 +80,7 @@
     "bullets": []
   },
   {
-    "id": 7,
+    "id": 8,
     "type": "work",
     "role": "Software Engineer",
     "company": "Disruption Laboratory",
@@ -78,9 +90,9 @@
     "bullets": []
   },
   {
-    "id": 8,
+    "id": 9,
     "type": "work",
-    "role": "Data Analyst",
+    "role": "Data Analyst I",
     "company": "AbbVie Innovation Center",
     "location": "Remote",
     "start": "Jul 2020",
