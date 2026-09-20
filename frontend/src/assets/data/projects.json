@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "AES Padding-Oracle Attack",
-    "description": "A padding-oracle attack against AES-CBC that recovers plaintext one byte at a time without ever knowing the key.",
-    "tech": ["Python", "AES-CBC", "Cryptanalysis"],
+    "title": "Anti-collusion mechanisms for secure multiparty computation",
+    "description": "Ongoing work on mechanisms that discourage collusion among participants in general secure multiparty computation, combining cryptographic and game-theoretic techniques.",
+    "tech": [],
     "image": "",
     "github": "",
     "demo": "",
@@ -11,9 +11,9 @@
   },
   {
     "id": 2,
-    "title": "Garbled Circuits",
-    "description": "An implementation of Yao's garbled circuits, enabling two parties to jointly evaluate a function while keeping their inputs private.",
-    "tech": ["Python", "Secure Computation", "MPC"],
+    "title": "Asynchronous verifiable information dispersal",
+    "description": "Improving existing asynchronous verifiable information dispersal protocols, and designing message-loss-resilient protocols in the asynchronous network model.",
+    "tech": [],
     "image": "",
     "github": "",
     "demo": "",
@@ -21,9 +21,9 @@
   },
   {
     "id": 3,
-    "title": "Oblivious Polynomial MPC",
-    "description": "Oblivious polynomial evaluation built on the MASCOT protocol for maliciously-secure multiparty computation.",
-    "tech": ["C", "MASCOT", "MPC"],
+    "title": "Oblivious transfer for anonymous healthcare rebates",
+    "description": "A cryptographic protocol for anonymous healthcare rebates based on oblivious transfer, with an implementation of oblivious polynomial evaluation in MP-SPDZ (Decentralized Systems Laboratory, UIUC).",
+    "tech": [],
     "image": "",
     "github": "",
     "demo": "",
@@ -31,32 +31,12 @@
   },
   {
     "id": 4,
-    "title": "Plonky2 ZK Circuit",
-    "description": "A zero-knowledge proof circuit implemented with Plonky2, produced for ECE 598YPZ (Advanced Topics in Applied Cryptography).",
-    "tech": ["Rust", "Zero-Knowledge", "Plonky2"],
+    "title": "Zero-knowledge proof circuits in Plonky2",
+    "description": "Implementation of a Plonky2 zero-knowledge proof circuit in Rust, from a graduate course on applied cryptography.",
+    "tech": [],
     "image": "",
     "github": "",
     "demo": "",
     "featured": true
-  },
-  {
-    "id": 5,
-    "title": "AES Block Cipher (Hardware)",
-    "description": "A hardware implementation of the AES block cipher written in SystemVerilog.",
-    "tech": ["SystemVerilog", "AES", "Hardware"],
-    "image": "",
-    "github": "",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 6,
-    "title": "Polynomial Extrapolation in Finite Fields",
-    "description": "Polynomial interpolation and extrapolation over finite fields — a core building block for secret sharing and MPC.",
-    "tech": ["Python", "Finite Fields", "Algebra"],
-    "image": "",
-    "github": "",
-    "demo": "",
-    "featured": false
   }
 ]

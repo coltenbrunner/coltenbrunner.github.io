@@ -2,11 +2,8 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
-import { EducationComponent } from './components/education/education.component';
-import { TalksComponent } from './components/talks/talks.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -17,11 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     HeroComponent,
     AboutComponent,
-    EducationComponent,
-    TalksComponent,
-    ExperienceComponent,
     ProjectsComponent,
-    SkillsComponent,
+    ExperienceComponent,
     ContactComponent,
     FooterComponent,
   ],
@@ -30,11 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     <main>
       <app-hero></app-hero>
       <app-about></app-about>
-      <app-education></app-education>
-      <app-talks></app-talks>
-      <app-experience></app-experience>
       <app-projects></app-projects>
-      <app-skills></app-skills>
+      <app-experience></app-experience>
       <app-contact></app-contact>
     </main>
     <app-footer></app-footer>

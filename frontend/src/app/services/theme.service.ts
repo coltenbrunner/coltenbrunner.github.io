@@ -2,14 +2,14 @@ import { Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
-  isDark = signal(true);
+  isDark = signal(false);
 
   constructor() {
     const saved = localStorage.getItem('theme');
     if (saved) {
       this.isDark.set(saved === 'dark');
-      this.applyTheme(saved === 'dark');
     }
+    this.applyTheme(this.isDark());
   }
 
   toggle(): void {

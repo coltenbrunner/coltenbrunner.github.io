@@ -1,34 +1,24 @@
 // ── Design tokens ──────────────────────────────────────────────────────────────
 :root {
-  // Dark theme — lifted off pure-black and softened off-white to cut glare
-  --bg:          #101017;
-  --bg-surface:  #15151f;
-  --bg-card:     #1c1c2b;
-  --border:      #2a2a40;
-  --accent:      #6bbfca;
-  --accent-dim:  rgba(107, 191, 202, 0.14);
-  --accent2:     #a78bfa;
-  --text:        #d5d6df;
-  --text-muted:  #9090ad;
-  --text-faint:  #4a4a60;
+  --bg:          #fdfdfb;
+  --bg-surface:  #ffffff;
+  --border:      #e4e4de;
+  --accent:      #35618e;
+  --text:        #24292e;
+  --text-muted:  #5a6470;
+  --text-faint:  #9199a3;
+  --font-serif:  'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-sans:   'Inter', system-ui, sans-serif;
-  --font-mono:   'JetBrains Mono', 'Courier New', monospace;
-  --radius:      8px;
-  --transition:  0.25s ease;
 }
 
-[data-theme="light"] {
-  // Light theme — slightly off-white surfaces and a darker teal accent so
-  // accent text/links stay legible (the dark-theme cyan fails on white).
-  --bg:         #f3f4f7;
-  --bg-surface: #fbfbfe;
-  --bg-card:    #eaebf2;
-  --border:     #d9dae4;
-  --accent:     #2c8d9c;
-  --accent-dim: rgba(44, 141, 156, 0.12);
-  --text:       #23233a;
-  --text-muted: #5a5a78;
-  --text-faint: #a6a6c4;
+[data-theme="dark"] {
+  --bg:         #17191d;
+  --bg-surface: #1d2025;
+  --border:     #2e3238;
+  --accent:     #8cb0d0;
+  --text:       #d8dade;
+  --text-muted: #9aa1ab;
+  --text-faint: #5f6670;
 }
 
 // ── Reset / base ───────────────────────────────────────────────────────────────
@@ -40,15 +30,20 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: opacity var(--transition);
-  &:hover { opacity: 0.75; }
+  &:hover { text-decoration: underline; }
 }
 
 img { max-width: 100%; display: block; }
@@ -56,114 +51,27 @@ img { max-width: 100%; display: block; }
 // ── Utility classes ────────────────────────────────────────────────────────────
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .section {
-  padding: 100px 0;
-  scroll-margin-top: 80px; // keep anchored sections clear of the fixed navbar
-}
+  padding: 3.5rem 0 0;
 
-// Section rhythm — alternating surfaces give each band a distinct footing
-// and a calmer, more deliberate flow down the page. (Only sections whose
-// inner cards/chips don't rely on --bg-surface are banded, so nothing blends.)
-#education,
-#projects {
-  background: var(--bg-surface);
-}
-
-.section-label {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--accent);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  &:last-of-type { padding-bottom: 3.5rem; }
 }
 
 .section-title {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
   color: var(--text);
-
-  span {
-    color: var(--accent);
-  }
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
 }
-
-.section-divider {
-  width: 48px;
-  height: 3px;
-  background: var(--accent);
-  border-radius: 2px;
-  margin-bottom: 3rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
-  border-radius: var(--radius);
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all var(--transition);
-  border: none;
-
-  &--primary {
-    background: var(--accent);
-    color: #0d0d14;
-    &:hover { opacity: 0.85; transform: translateY(-1px); }
-  }
-
-  &--outline {
-    background: transparent;
-    border: 1.5px solid var(--accent);
-    color: var(--accent);
-    &:hover { background: var(--accent-dim); transform: translateY(-1px); }
-  }
-}
-
-.card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.75rem;
-  transition: border-color var(--transition), transform var(--transition);
-
-  &:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-  }
-}
-
-// ── Animations ─────────────────────────────────────────────────────────────────
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
-}
-
-.fade-up {
-  animation: fadeUp 0.6s ease forwards;
-}
-
-// ── Scrollbar ──────────────────────────────────────────────────────────────────
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
 // ── Responsive helpers ─────────────────────────────────────────────────────────
 @media (max-width: 768px) {
-  .section { padding: 70px 0; }
+  .section { padding-top: 2.5rem; }
   .container { padding: 0 1.25rem; }
 }
