@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   template: `
     <footer class="footer">
       <div class="container">
-        <p>© {{ year }} Colten Brunner</p>
+        <p>
+          © {{ year }} Colten Brunner · Designed with help from
+          <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+        </p>
       </div>
     </footer>
   `,
@@ -19,6 +22,12 @@ import { Component } from '@angular/core';
       p {
         font-size: 0.85rem;
         color: var(--text-faint);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
       }
     }
   `],
